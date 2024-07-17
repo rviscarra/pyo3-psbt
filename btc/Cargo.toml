@@ -1,0 +1,12 @@
+[package]
+name = "btc"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "btc"
+crate-type = ["cdylib"]
+
+[dependencies]
+bitcoin = "^0.32.0"
+pyo3 = "0.20.0"

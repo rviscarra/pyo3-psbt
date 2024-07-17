@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSBT sample</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <section class="main-content">
+      <div class="pay-form">
+        <div class="input-container">
+          <label>Fee Rate</label>
+          <div>
+            <input id="fee-rate" type="number" value="1" min="1"/> sats/vByte
+          </div>
+        </div>
+        <div class="input-container">
+          <div>
+            <input id="broadcast" type="checkbox" />
+            Broadcast
+          </div>
+        </div>
+        <div>
+          <button id="pay-now">Pay with wallet</button>
+        </div>
+      </div>
+      <div>
+        <h3>Action Log</h3>
+        <div class="action-log"></div>
+      </div>
+    </section>
+  </div>
+  <script src="/static/index.js"></script>
+</body>
+</html>
