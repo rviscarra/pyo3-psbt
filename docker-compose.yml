@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+    environment:
+      SAMPLE_API_BASE: "https://mempool.space/testnet"
+      SAMPLE_RECIPIENT_ADDRESS: "${SAMPLE_RECIPIENT_ADDRESS}"
+    ports:
+      - "9000:9000"
